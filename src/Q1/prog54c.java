@@ -12,8 +12,7 @@ public class prog54c {
 
         double area = pi * (rad * rad);
         double circ = 2 * pi * rad;
-        double circrounded = Math.round(circ * 100.0) / 100.0;
-        double arearounded = Math.round(circ * 100.0) / 100.0;
+
 
 
         System.out.printf("Circumference = %.3f\n", circ);
