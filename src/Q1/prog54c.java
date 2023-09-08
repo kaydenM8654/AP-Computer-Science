@@ -19,3 +19,9 @@ public class prog54c {
         System.out.printf("Area of circle = %.3f\n", area);
     }
 }
+/*
+Please enter radius: 3.712
+
+Circumference = 23.323
+Area of circle = 43.288
+ */
