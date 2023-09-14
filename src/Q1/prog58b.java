@@ -26,15 +26,15 @@ public class prog58b {
 
         double interest_a = Amount * interest_conversion;
         double interest_earned = Amount - interest_a;
-        double Total_amount = Amount * ((1 + ((.01 * interest_earned)/ per_year)Math.pow(per_year * total_days / 365)));
+        double Total_amount = Amount * (1 + (Math.pow(.01 * interest_earned/ per_year, per_year * total_days/ 365)));
 
         System.out.println("Money originally put in savings = " + Amount);
         System.out.println("Rate of interest = " + interest);
         System.out.println("number of days compounded per year = " + per_year);
         System.out.println("Number of days money has been in savings account = " + total_days);
         System.out.println();
-        System.out.println("the amount of interest earned is ", interest_earned);
-        System.out.println("The amount currently in the account is ", Total_amount);
+        System.out.println("the amount of interest earned is " + interest_earned);
+        System.out.println("The amount currently in the account is " + Total_amount);
 
 
 
