@@ -25,7 +25,7 @@ public class prog58h {
         double interest_conversion = interest / 100;
 
         double interest_a = Amount * interest_conversion;
-        double interest_earned = Amount * (1 + (Math.pow(.01 * interest_conversion/ per_year, per_year * total_days)/ 365));
+        double interest_earned = Amount * ((1 + (Math.pow(.01 * interest/ per_year, per_year * total_days/ 365))));
         double Total_amount = Amount + interest_earned;
 
         System.out.println("Money originally put in savings = " + Amount);
