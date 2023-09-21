@@ -34,15 +34,27 @@ public class prog58t {
         double change4 = (change3 - (nickels * 0.05));
 
         int pennies = (int) (change4 / 0.01);
-        System.out.println("Change due: " + change);
+        System.out.printf("Amount given: %.2f\n", Amount_r);
+        System.out.printf("Purchase price: %.2f\n", Purchase_p);
+        System.out.printf("Change due: %.2f\n", change);
 
 
-        System.out.println(dollars);
-        System.out.println(quarters);
-        System.out.println(dimes);
-        System.out.println(nickels);
-        System.out.println(pennies);
+        System.out.println(dollars + " dollars");
+        System.out.println(quarters + " quarters");
+        System.out.println(dimes + " dimes");
+        System.out.println(nickels + " nickels");
+        System.out.println(pennies + " pennies");
 
 
     }
 }
+/*
+Amount given: 140.00
+Purchase price: 125.32
+Change due: 14.68
+14 dollars
+2 quarters
+1 dimes
+1 nickels
+3 pennies
+ */
