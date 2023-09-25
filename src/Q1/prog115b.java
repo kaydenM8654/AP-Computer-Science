@@ -2,14 +2,11 @@ package Q1;
 import java.util.*;
 public class prog115b {
     public static void main(String[] args) {
-        int num = 0;
-
-        while (num == 0) {
-            num += 2;
-            if (num == 32) {
-                System.out.println(num);
+        for (int lcv = 0; lcv < 36; lcv++) {
+            int num = lcv + 1;
+            if (num%2 == 0) {
+                System.out.print(num + " ");
             }
-
         }
     }
 }

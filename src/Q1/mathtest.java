@@ -17,6 +17,6 @@ public class mathtest {
         double mywrounded = Math.round(mywallet * 100.0) / 100.0;
 
         System.out.println(mywrounded);
-        System.out.printf("mywrounded = %.2f\n", mywallet);
+        System.out.printf("mywrounded = %.2f\n",  mywallet);
     }
 }
