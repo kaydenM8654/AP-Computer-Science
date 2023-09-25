@@ -2,7 +2,6 @@ package Q1;
 import java.util.*;
 public class prog122a {
     public static void main(String[] args) {
-<<<<<<< HEAD
         for (int lcv = 0; lcv < 50; lcv++) {
             int num = lcv+1;
             double sq = num * num;
