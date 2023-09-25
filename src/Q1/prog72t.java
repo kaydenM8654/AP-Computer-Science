@@ -24,7 +24,7 @@ public class prog72t {
         if (math1 < 0) {
             math2 = 2400 - Math.abs(math1);
         }
-        int math2 = 2400 - math1;
+        int math = 2400 - math1;
 
         int math3 = math2 /60;
 
