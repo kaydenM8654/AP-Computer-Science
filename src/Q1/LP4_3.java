@@ -22,9 +22,10 @@ public class LP4_3 {
         }else {
             System.out.println("Please enter valid number");
         }
+        double equation2 = 0.83 * num;
         int extra = eggs - (dozen * 12);
-        double equation = extra * (1/12 * num);
-        double ans = dozen * num + equation;
+        double equation = extra * (equation2);
+        double ans = dozen * num + equation + equation2;
         System.out.println("The bill is to equal: $" + ans);
         System.out.println(equation);
 
