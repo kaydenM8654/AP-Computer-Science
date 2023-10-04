@@ -25,9 +25,7 @@ public class LP4_10 {
         double r = input.nextDouble();
 
         double d = r * 2;
-        double d3 = d * d * d;
-        double eq = d3 * 3.14;
-        double v1 = eq / 6;
+        double v1 = (Math.pow(d, 3) * 3.14) / 6;
 
         System.out.print("Volume = " + v1);
         System.out.println();
