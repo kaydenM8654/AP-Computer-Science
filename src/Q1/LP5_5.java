@@ -5,20 +5,25 @@ public class LP5_5 {
         Scanner input = new Scanner(System.in);
 
 
-        System.out.print("Please enter weight in kg: ");
+        System.out.print("Please enter Number: ");
         String str = String.valueOf(input.nextInt());
         System.out.println();
 
-        String first = str.substring(0,1);
-        System.out.println(first);
-
-        for (int lcv = Integer.parseInt(first);;) {
-            int next = Integer.parseInt(first + 1);
-            System.out.println(next);
+        for (int lcv = 0; lcv < str.length(); lcv++) {
+            System.out.println(str.charAt(lcv) + " ");
         }
+
 
 
 
 
     }
 }
+/*
+Please enter Number: 546
+
+5
+4
+6
+
+ */
