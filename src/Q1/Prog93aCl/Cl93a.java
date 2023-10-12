@@ -22,16 +22,20 @@ public class Cl93a {
     }
 
     public void calc() {
-        base = kilo * 4.75;
+        base = kilo * 0.0475;
         surcharge = 4.72;
         citytax = 1.42;
         total = base + surcharge + citytax;
         latetotal = total * 0.04;
-        latetotal1 = total - latetotal;
+        latetotal1 = total + latetotal;
 
     }
 
     public double getBase() { return base; }
     public double getSurcharge() { return surcharge; }
+    public double getCitytax() { return citytax; }
+    public double getTotal() { return total; }
+    public double getLatetotal() { return latetotal; }
+    public double getLatetotal1() { return latetotal1; }
 
 }
