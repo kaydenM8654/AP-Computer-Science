@@ -1,28 +1,25 @@
 package Q1.Prog209aCl;
 
 public class Cl209a {
-    private int num;
-    private int great;
-    private int less;
-    private int total;
+    private int qnt;
+    private int numGreat;
+    private int numLess;
+    private int totalnum;
 
-    public Cl209a() {
-        num = 0;
-        great = 0;
-        less = 0;
-        total = 0;
+    public Cl209a(int num) {
+        qnt = num;
+        numGreat = 0;
+        numLess = 0;
+        totalnum = 0;
     }
 
     public void calc() {
-        if (num >= 500) {
-            great += 1;
-        }else {
-            less += 1;
-        }
-        total = less + great;
+        if (qnt < 500) numLess += 1;
+        else numGreat += 1;
+        totalnum = numGreat + numLess;
     }
 
-    public int getGreat() {return great; }
-    public int getLess() { return less;}
-    public int getTotal() { return total;}
+    public int getNumGreat() { return numGreat;}
+    public int getNumLess() { return numLess;}
+    public int getTotalnum() {return totalnum;}
 }
