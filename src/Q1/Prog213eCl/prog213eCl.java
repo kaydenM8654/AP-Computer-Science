@@ -8,23 +8,21 @@ public class prog213eCl {
     public static void main(String[] args) {
         try {
             Scanner input = new Scanner(new File("Langdat/prog213e.dat"));
-            int num = 0;
-            while (input.hasNext()) {
-                num = input.nextInt();
-                Cl213e wowsa = new Cl213e(num);
-                wowsa.calc();
-                int Dis = wowsa.getDis();
-                double per = wowsa.getPer();
-                String group = wowsa.getGroup();
-                System.out.println("\nAge: " + num);
-                System.out.println("Group: " + group);
-                System.out.println("Distrubution: " + Dis);
-                System.out.println("Percent: " + per);
+            int age = 0;
 
+            while (input.hasNext()) {
+                age = input.nextInt();
+                Cl213e wow = new Cl213e(age);
+                wow.calc();
+                int distribution = wow.getDistribution();
+                double percent = wow.getPercent();
+                String group = wow.getGroup();
+                System.out.println("\nGroup: " + group);
+                System.out.println("Distribution: " + distribution);
+                System.out.println("Percentage: " + percent + "%");
             }
         } catch (IOException e) {
-            System.out.println("Can't find data file!");
+            System.out.println("Can't find data file");
         }
-
     }
 }

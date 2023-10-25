@@ -1,45 +1,47 @@
 package Q1.Prog213eCl;
 
 public class Cl213e {
-    private int num;
-    private int Dis;
-    private double per;
+    private int age;
+    private int distribution;
+    private double percent;
     private String group;
 
-
-    public Cl213e(int num) {
-        this.num = 0;
-        Dis = 0;
-        per = 0;
+    public Cl213e(int a) {
+        age = a;
+        distribution = 0;
+        percent = 0;
         group = "0";
     }
 
     public void calc() {
-        if (num < 20) {
-            group = "< 20";
-            per = 17.65;
-            Dis = 3;
-
-        }else if (num > 19 && num < 40) {
+        if (age < 20) {
+            group = "<20";
+            distribution = 3;
+            percent = 17.65;
+        }
+        else if (age > 19 && age < 40) {
             group = "20-39";
-            per = 29.41;
-            Dis = 5;
-        }else if (num > 39 && num < 60) {
+            distribution = 5;
+            percent = 29.41;
+        }
+        else if (age > 39 && age < 60) {
             group = "40-59";
-            per = 23.53;
-            Dis = 4;
-        }else if (num > 59 && num < 80) {
+            distribution = 4;
+            percent = 23.53;
+        }
+        else if (age > 59 && age < 80) {
             group = "60-79";
-            per = 17.65;
-            Dis = 3;
-        }else {
+            distribution = 3;
+            percent = 17.65;
+        }
+        else if (age > 79) {
             group = ">79";
-            per = 11.76;
-            Dis =  2;
+            distribution = 2;
+            percent = 11.76;
         }
     }
 
-    public int getDis() { return Dis; }
-    public double getPer() { return per; }
+    public int getDistribution() { return distribution; }
+    public double getPercent() { return percent; }
     public String getGroup() { return group; }
 }
