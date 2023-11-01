@@ -14,9 +14,8 @@ public class SPCTemplate23 {
      */
     public int Problem1(int n) {
         String num= String.valueOf(n);
-        String back = "";
-        for (int lcv = num.length(); lcv >0; lcv--){
-            back = num.substring(lcv-1,lcv);
+        if(num.substring(num.length()-1, num.length()) == num.substring(0, 1)) {
+
         }
 
         return 0;
@@ -38,10 +37,20 @@ public class SPCTemplate23 {
      *                  the sum becomes 10.83... > 10, so we return 6.
      */
     public int Problem2(int threshold) {
-        /* Your code here */
-
-        return -1;  // Remove
+        double t;
+        double sqrtroot=25/2;
+        do
+        {
+            t=sqrtroot;
+            sqrtroot=(t+(1/t))/2;
+        }
+        while((t-sqrtroot)!= 0);
+        return (int) sqrtroot;
     }
+
+
+
+
 
 
     /** 3. GCD Calculation (10 points)
@@ -81,10 +90,26 @@ public class SPCTemplate23 {
      * @param n Example: 60
      * @return – Example: "2 2 3 5"
      */
-    public String Problem4(int n) {
-        /* Your code here */
+    public int Problem4(int n) {
+        while (n % 2 == 0) {
+            System.out.print(2 + " ");
+            n /= 2;
+        }
+        for (int i = 3; i <= Math.sqrt(n); i += 2) {
+            while (n % i == 0) {
+                System.out.print(i + " ");
+                n /= i;
 
-        return "";  // Remove
+            }
+
+        }
+
+        if (n > 2) {
+
+            System.out.print(n);
+
+        }
+        return 0;
     }
 
 
@@ -99,9 +124,15 @@ public class SPCTemplate23 {
      * @return – Example: 34
      */
     public int Problem5(int n) {
-        /* Your code here */
+        int n1 = 0, n2 = 1, n3 = 0, i, count = n;
+        for (i = 2; i < count; ++i) {
+            n3 = n1 + n2;
+            n1 = n2;
+            n2 = n3;
 
-        return -1;  // Remove
+        }
+        System.out.println(n3);
+        return 0;
     }
 
 
