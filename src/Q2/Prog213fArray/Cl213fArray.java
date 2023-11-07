@@ -16,11 +16,15 @@ public class Cl213fArray {
         }else if(mykwh > 2000 && mykwh < 10001) {
             int math = (int) (mykwh - 2000);
             myCost = math * 0.05;
-        }else if(my)
+        }else if(mykwh > 10000) {
+            int math1 = (int) (mykwh - 10000);
+            myCost = math1 * 0.04;
+        }
 
     }
 
     public String toString() {
-        return "The number of ";
+
+        return String.format("The number of kwh =  %.2f\tAmount per kilowatt hour = $%.2f\t", mykwh, myCost);
     }
 }
