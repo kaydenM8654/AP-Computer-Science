@@ -10,9 +10,8 @@ public class Cl435g {
         myRank = 0;
     }
     
-    public void setland(int rank) { myRank = rank; }
+    public void setRank(int rank) { myRank = rank; }
     public String toString() { return myScore + "\t\t" + myRank; }
 
-    public void setRank(int rank) {
-    }
+
 }
