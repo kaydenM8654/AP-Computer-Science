@@ -7,7 +7,11 @@ import java.util.Scanner;
 public class LP3_9Cl {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.println("Enter Birthdate: ");
+        System.out.println("Day: ");
         int day = input.nextInt();
+        System.out.println("Month: ");
+        int month = input.next
 
 
     }
