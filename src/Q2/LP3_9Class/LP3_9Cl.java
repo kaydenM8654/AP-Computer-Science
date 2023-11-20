@@ -11,7 +11,7 @@ public class LP3_9Cl {
         System.out.println("Day: ");
         int day = input.nextInt();
         System.out.println("Month: ");
-        int month = input.next
+        int month = input.nextInt();
 
 
     }
