@@ -9,9 +9,20 @@ public class LP3_9Cl {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter Birthdate: ");
         System.out.println("Day: ");
-        int day = input.nextInt();
+        int d1 = input.nextInt();
         System.out.println("Month: ");
-        int month = input.nextInt();
+        int m1 = input.nextInt();
+        System.out.println("Year: ");
+        int y1 = input.nextInt();
+        System.out.println("Enter Todays date: ");
+        System.out.println("Day: ");
+        int d2 = input.nextInt();
+        System.out.println("Month: ");
+        int m2 = input.nextInt();
+        System.out.println("Year: ");
+        int y2 = input.nextInt();
+
+
 
 
     }
