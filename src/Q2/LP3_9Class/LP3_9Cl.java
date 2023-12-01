@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class LP3_9Cl {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.println("Enter Birthdate: ");
         System.out.println("Day: ");
@@ -27,8 +27,7 @@ public class LP3_9Cl {
 
         int slept = wow.getSlept();
         int alive = wow.getAlive();
-        int monthmath = wow.getMonthmath();
-        int yearmath = wow.getYearmath();
+
 
         System.out.println("You have been alive for: " + alive + " days");
         System.out.println("You have slept for: " + slept + " days");

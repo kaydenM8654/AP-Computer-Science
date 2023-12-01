@@ -9,8 +9,8 @@ public class Cl3_9 {
     private int day1;
     private int alive;
     private int slept;
-    private int yearmath;
-    private int monthmath;
+    private int currenttotaldays;
+    private int birthtotaldays;
 
 
     public Cl3_9(int y1, int m1, int d1, int y2, int m2, int d2) {
@@ -22,14 +22,14 @@ public class Cl3_9 {
         month1 = m2;
         day1 = d2;
         alive = 0;
-        monthmath = 0;
-        yearmath = 0;
+        birthtotaldays = 0;
+        currenttotaldays = 0;
     }
 
     public void calc() {
-        yearmath = (year1 - year) * 365;
-        monthmath = (Math.abs(month1 - month)) * 30;
-        alive = (Math.abs(day1 - day)) + monthmath + yearmath;
+        currenttotaldays = (year1 * 365) + (month1 * 30) + day1;
+        birthtotaldays = (year * 365) + (month * 30) + day;
+        alive = Math.abs(currenttotaldays - birthtotaldays);
         slept = alive * 8 / 24;
 
     }
@@ -42,6 +42,5 @@ public class Cl3_9 {
     public int getDay1() { return day1; }
     public int getAlive() { return alive; }
     public int getSlept() { return slept; }
-    public int getYearmath() { return yearmath; }
-    public int getMonthmath() { return monthmath; }
+
 }
