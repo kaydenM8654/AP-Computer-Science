@@ -22,6 +22,18 @@ public class LP3_9Cl {
         System.out.println("Year: ");
         int y2 = input.nextInt();
 
+        Cl3_9 wow = new Cl3_9(d1, m1, y1, d2, m2, y2);
+        wow.calc();
+
+        int slept = wow.getSlept();
+        int alive = wow.getAlive();
+        int monthmath = wow.getMonthmath();
+        int yearmath = wow.getYearmath();
+
+        System.out.println("You have been alive for: " + alive + " days");
+        System.out.println("You have slept for: " + slept + " days");
+
+
 
 
 

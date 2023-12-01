@@ -30,7 +30,7 @@ public class Cl3_9 {
         yearmath = (year1 - year) * 365;
         monthmath = (Math.abs(month1 - month)) * 30;
         alive = (Math.abs(day1 - day)) + monthmath + yearmath;
-        slept = alive * 8;
+        slept = alive * 8 / 24;
 
     }
 
@@ -40,4 +40,8 @@ public class Cl3_9 {
     public int getYear1() { return year1; }
     public int getMonth1() { return month1; }
     public int getDay1() { return day1; }
+    public int getAlive() { return alive; }
+    public int getSlept() { return slept; }
+    public int getYearmath() { return yearmath; }
+    public int getMonthmath() { return monthmath; }
 }
