@@ -20,10 +20,10 @@ public class Cl3_9 {
         month1 = m2;
         day1 = d2;
         alive = 0;
-
+    }
 
     public void calc() {
-        alive = Math.abs();
+        alive = ((year1 - year) * 365) + ((Math.abs(month1 - month)) * 30) + (Math.abs(day1 - day));
         slept = alive * 8 / 24;
 
     }
