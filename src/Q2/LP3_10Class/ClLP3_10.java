@@ -20,7 +20,7 @@ public class ClLP3_10 {
 
     public void calc() {
         total = burgers * 1.69 + fries * 1.09 + sodas * 0.99;
-        tax = (1 - total);
+        tax = (int) total;
         ttotal = total + tax;
     }
 }

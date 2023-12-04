@@ -20,21 +20,10 @@ public class Cl3_9 {
         month1 = m2;
         day1 = d2;
         alive = 0;
-
-
-    public void calc() {
-        alive = Math.abs();
-        slept = alive * 8 / 24;
-
     }
 
-    public int getYear() { return year; }
-    public int getMonth() { return month; }
-    public int getDay() { return day; }
-    public int getYear1() { return year1; }
-    public int getMonth1() { return month1; }
-    public int getDay1() { return day1; }
-    public int getAlive() { return alive; }
-    public int getSlept() { return slept; }
+
+
+
 
 }
