@@ -34,10 +34,13 @@ public class ClLP314 {
         martinezTotal = martinezConnecticut + martinezNewJersey + martinezNewYork;
         aubreyTotal = aubreyNewYork + aubreyNewJersey + aubreyConnecticut;
         totalVote = aubreyTotal + martinezTotal;
-        martinezPercentage = martinezTotal / totalVote;
+        martinezPercentage = (int) martinezTotal / totalVote;
         aubreyPercentage = aubreyTotal / totalVote;
     }
 
     public int getMartinezTotal() { return martinezTotal; }
     public int getAubreyTotal() { return aubreyTotal; }
+    public int getTotalVote() { return totalVote; }
+    public double getAubreyPercentage() { return aubreyPercentage; }
+    public double getMartinezPercentage() { return martinezPercentage; }
 }
