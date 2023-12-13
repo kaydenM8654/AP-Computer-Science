@@ -4,12 +4,12 @@ public class ClLP314 {
     public int aubreyNewYork;
     public int aubreyNewJersey;
     public int aubreyConnecticut;
-    public int aubreyTotal;
+    public double aubreyTotal;
     public int martinezNewYork;
     public int martinezNewJersey;
     public int martinezConnecticut;
-    public int martinezTotal;
-    public int totalVote;
+    public double martinezTotal;
+    public double totalVote;
     public double aubreyPercentage;
     public double martinezPercentage;
 
@@ -34,13 +34,13 @@ public class ClLP314 {
         martinezTotal = martinezConnecticut + martinezNewJersey + martinezNewYork;
         aubreyTotal = aubreyNewYork + aubreyNewJersey + aubreyConnecticut;
         totalVote = aubreyTotal + martinezTotal;
-        martinezPercentage = (int) martinezTotal / totalVote;
+        martinezPercentage = martinezTotal / totalVote;
         aubreyPercentage = aubreyTotal / totalVote;
     }
 
-    public int getMartinezTotal() { return martinezTotal; }
-    public int getAubreyTotal() { return aubreyTotal; }
-    public int getTotalVote() { return totalVote; }
+    public double getMartinezTotal() { return martinezTotal; }
+    public double getAubreyTotal() { return aubreyTotal; }
+    public double getTotalVote() { return totalVote; }
     public double getAubreyPercentage() { return aubreyPercentage; }
     public double getMartinezPercentage() { return martinezPercentage; }
 }

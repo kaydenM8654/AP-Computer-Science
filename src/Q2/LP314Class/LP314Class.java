@@ -1,5 +1,7 @@
 package Q2.LP314Class;
 import java.util.*;
+import java.util.function.DoubleFunction;
+
 public class LP314Class {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -25,17 +27,17 @@ public class LP314Class {
         ClLP314 wow = new ClLP314(ay, my, aj, mj, ac, mc);
         wow.calc();
 
-        int totalvote = wow.getTotalVote();
-        int aubreytotal = wow.getAubreyTotal();
-        int martineztotal = wow.getMartinezTotal();
+        double totalvote = wow.getTotalVote();
+        double aubreytotal = wow.getAubreyTotal();
+        double martineztotal = wow.getMartinezTotal();
         double aubreypercentage = wow.getAubreyPercentage();
         double martinezpercentage = wow.getMartinezPercentage();
 
 
-        System.out.println("Candidate" + "             " + "Votes" + "  " + "Percentage");
-        System.out.println("Aubrey" + "                " + aubreytotal + "      " + aubreypercentage);
-        System.out.println("Martinez" + "              " + martineztotal + "    " + martinezpercentage);
-        System.out.println("TOTAL VOTES:" + "          " + totalvote);
+        System.out.println("Candidate        Votes     percentage");
+        System.out.printf("Aubrey       ", aubreytotal, aubreypercentage);
+
+
 
     }
 }
