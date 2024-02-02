@@ -8,35 +8,30 @@ public class Prog477a {
     public static void main(String[] args) {
         try {
             Scanner input = new Scanner(new File("Langdat/prog477a.dat"));
-            int[][] array = new int[4][5];
-            int grade;
-            String A = "A";
-            String B = "B";
-            String C = "C";
-            String D = "D";
-            String F = "F";
-            int am = 0;
-            int bm = 0;
-            int cm = 0;
-            int dm = 0;
-            int fm = 0;
-            int af = 0;
-            int bf = 0;
-            int cf = 0;
-            int df = 0;
-            int ff = 0;
-            int at = 0;
-            int bt = 0;
-            int ct = 0;
-            int dt = 0;
-            int ft = 0;
-            int tt = 0;
-            int fmt = 0;
-            int mt = 0;
+            int fcount = 0;
+            int mcount = 0;
+            int fA = 0;
+            int fB = 0;
+            int fC = 0;
+            int fD = 0;
+            int fF = 0;
+            int mA = 0;
+            int mB = 0;
+            int mC = 0;
+            int mD = 0;
+            int mF = 0;
 
-            while (input.hasNext()){
-                if (grade )
+
+            int num  = input.nextInt();
+            int grade = input.nextInt();
+            for (int i = 0; i < 33 + 1; i ++) {
+                if(num == 1 && grade == 1){
+                    mA += 1;
+                }
             }
+            mcount = mA + mB + mC + mD + mF;
+            fcount = fA + fB + fC + fD + fF;
+            System.out.println(mcount);
 
 
         } catch (IOException e) {
