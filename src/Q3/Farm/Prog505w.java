@@ -13,7 +13,7 @@ public class Prog505w {
             List<Animal> animals = new ArrayList<Animal>();
             int cweight = 0;
             int hweight = 0;
-
+            int foodeaten = 0;
 
             int hay = input.nextInt();
             double hayCost = input.nextDouble();
@@ -31,6 +31,8 @@ public class Prog505w {
                     int cornEaten = input.nextInt();
                     Cow wow = new Cow(name, weight, milk, hayEaten, cornEaten);
                     animals.add(wow);
+                    foodeaten += cornEaten;
+                    foodeaten += hayEaten;
                     hay = hayEaten;
                     corn = cornEaten;
                     cweight += weight;
@@ -49,6 +51,8 @@ public class Prog505w {
                     double rideCost = input.nextDouble();
                     Horse wow = new Horse(name, weight, cornEaten, hayEaten, rides, rideCost);
                     animals.add(wow);
+                    foodeaten += cornEaten;
+                    foodeaten += hayEaten;
                     hay -= hayEaten;
                     corn -= cornEaten;
                     hweight += weight;
@@ -57,7 +61,7 @@ public class Prog505w {
             int cumlativeweight = cweight + hweight;
             System.out.println("Cumlative weight of all animals: " + cumlativeweight);
 
-            //TODO: report income for the day,if theres enough food to feed all, cow that makes most money
+            //TODO: report income for the day,if theres enough food to feed all,
 
 
             double minHorseValue = Double.MAX_VALUE;
@@ -72,11 +76,11 @@ public class Prog505w {
                     }
                 }
             }
-
+            System.out.println(hay + corn);
             double maxCowValue = Double.MIN_VALUE;
             int maxCowIndex = 0;
             for (int lcv = 0; lcv < animals.size(); lcv++){
-                if (animals.get(lcv) instanceof Horse){
+                if (animals.get(lcv) instanceof Cow){
                     Cow cow = (Cow)animals.get(lcv);
                     double cvalue = cow.value(cornCost, hayCost);
                     if(cvalue > maxCowValue){
@@ -84,6 +88,11 @@ public class Prog505w {
                         maxCowIndex = lcv;
                     }
                 }
+            }
+            if (hay + corn - foodeaten > 0){
+                System.out.println("There is enough food to feed all animals");
+            }else{
+                System.out.println("There is not enough food to feed all animals");
             }
 
             System.out.printf("Horse %s makes the least money\n", animals.get(minHorseIndex).getName());
