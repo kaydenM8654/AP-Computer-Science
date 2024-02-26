@@ -14,6 +14,9 @@ public class Prog505w {
             int cweight = 0;
             int hweight = 0;
             int foodeaten = 0;
+            double cowRev = 0;
+            double horseRev = 0;
+
 
             int hay = input.nextInt();
             double hayCost = input.nextDouble();
@@ -36,6 +39,7 @@ public class Prog505w {
                     hay = hayEaten;
                     corn = cornEaten;
                     cweight += weight;
+                    cowRev += (milk * 0.20);
                 }
             }
 
@@ -56,12 +60,15 @@ public class Prog505w {
                     hay -= hayEaten;
                     corn -= cornEaten;
                     hweight += weight;
+                    horseRev += (rides * rideCost);
                 }
             }
+            double totalRev = (horseRev + cowRev) - (cornCost + hayCost);
             int cumlativeweight = cweight + hweight;
-            System.out.println("Cumlative weight of all animals: " + cumlativeweight);
+            System.out.println("Cumlative weight of all animals: " + cumlativeweight + "lbs");
+            System.out.println("Total income for the day: " + totalRev);
 
-            //TODO: report income for the day,if theres enough food to feed all,
+
 
 
             double minHorseValue = Double.MAX_VALUE;
