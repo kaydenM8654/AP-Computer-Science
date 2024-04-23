@@ -8,7 +8,15 @@ public class Cat extends Pet{
 
     @Override
     public void feed() {
-        // TODO: Implement feeding behavior for Cat
+        if(this.getHunger() > 0){
+            setHunger(0);
+        }
+        if(this.getEnergy() < 100){
+            setEnergy(MAX_ENERGY);
+        }
+        if(this.getHappiness() < 100){
+            setHappiness(MAX_HAPPINESS);
+        }
     }
 
     @Override
