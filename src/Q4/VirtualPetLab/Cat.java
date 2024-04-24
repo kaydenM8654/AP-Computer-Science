@@ -21,11 +21,25 @@ public class Cat extends Pet{
 
     @Override
     public void play() {
-        // TODO: Implement playing behavior for Cat
+        if(this.getHappiness() < 100){
+            setHappiness(MAX_HAPPINESS);
+        }
+        if(this.getHunger() < 100){
+            setHunger(MAX_HUNGER);
+        }
+        if(this.getEnergy() > 99){
+            setEnergy(0);
+        }
     }
 
     @Override
     public void sleep() {
-        // TODO: Implement sleeping behavior for Cat
+        if(this.getEnergy() < 100){
+            setEnergy(90);
+        }
+        if(this.getHunger() < 100){
+            setHunger(this.getHunger() - 10);
+        }
+        setHappiness(this.getHappiness() + 20);
     }
 }
