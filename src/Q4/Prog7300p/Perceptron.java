@@ -47,7 +47,7 @@ public class Perceptron {
                 double error = y_train[i] - y_pred;
                 loss = Math.pow(error, 2);
                 for(int j = 0; j < weights.length; j++)
-                    weights[i] += learningRate * error * X_train[i][j];
+                    weights[j] += learningRate * error * X_train[i][j];
                 bias += learningRate * error;
             }
             System.out.println("Epoch " + (epoch+1) + ": Loss: " + (loss/n_samples));
